@@ -1,0 +1,43 @@
+<head>
+  <title>Happy Dog!</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	 <div class="navbar-fixed">
+		  <nav class="orange darken-3">
+		    <div class="nav-wrapper">
+		    	<h4 style="padding-left:0.1em">
+		      		<a href="/" class="center">Happy Dog!</a>
+		      	</h4>
+		    </div>
+		  </nav>
+	</div>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+	<div class="center">
+		<p>
+			<a class="waves-effect waves-light btn-large feed">Feed Now</a>
+		</p>
+	</div>
+	<p>
+		<div style="margin-left:5em;margin-right:5em">
+			Schedule a feeding:
+			<br>
+			<label for="date">Date:</label>
+			<input style="padding:0.25em" id="date" type="date" class="datepicker">
+			<br>
+			<label for="time">Time:</label>
+			<input id="time" class="timepicker" type="text">
+			<br>
+			<input style="padding-left:1em" type="checkbox" id="box" />
+      		<label for="box">Repeat Daily</label>
+      		<p>
+      			<a class="waves-effect waves-light btn schedule">Schedule</a>
+      		</p>
+		</div>
+	</p>
+</template>
